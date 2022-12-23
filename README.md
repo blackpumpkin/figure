@@ -1,6 +1,5 @@
 # Github-Image-Hosting
-~~测试一下Github当作图床的效果怎么样。~~
-憋看了，Cloudflare和jsd全被墙了，鉴定为寄！
+测试一下Github当作图床的效果怎么样。
 
 以下为具体步骤：
 # 一、新建仓库
@@ -40,6 +39,8 @@ git push
 也可以选择这个地址`https://raw.githubusercontent.com/{用户名}/{图床仓库名}/main/{图片文件夹}/{图片名称}`
 
 # 六、CDN部署加速
+经验证，jsd目前已被墙，5.2方法已失效。
+
 ## 5.1 Cloudflare部署
 创建项目后会给出一个域，形如`aaa-bbb-ccc.pages.dev`
 我们在上述域后面添加内容 /{图片文件夹}/{图片名称}，用浏览器进入，即为我们需要图片的地址。
