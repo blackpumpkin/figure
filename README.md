@@ -7,7 +7,7 @@
 # 二、克隆仓库
 1.点击Code-Local-Clone-SSH，将地址复制下来。<br>
 2.在本地建立一个文件夹，右键Git Bash Here，终端输入以下代码：
-```
+```bash
 git clone {SSH}
 ```
 其中{SSH}为自己复制的地址（形如`git clone git@github.com:XXX/YYY.git`，XXX为Github名称，YYY为仓库名称）
@@ -17,23 +17,23 @@ git clone {SSH}
 
 # 四、上传图片
 1.在克隆文件夹内Git Bash Here，输入以下代码：
-```
+```bash
 git add .
 ```
 （注意有一个小点）
 这步的目的是将文件加入到暂存区。<br>
 2.输入以下代码：
-```
+```bash
 git commit -m "更新图片"
 ```
 这步的目的是将暂存区文件加入到本地仓库。<br>
 3.输入以下代码：
-```
+```bash
 git push
 ```
 这步的目的是将本地仓库上传到远程仓库。<br>
 4.如果想要对远程仓库进行修改（如删除），需要在执行前三步前先将远程仓库与本地仓库同步：
-```
+```bash
 git pull
 ```
 
