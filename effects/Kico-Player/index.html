@@ -2,14 +2,23 @@
 <script src="KPlayer.js"></script>
 
 const player = new KPlayer({
-    container: document.querySelector("#player-1"),
-    playlist: [
+  container: document.getElementById("player-1"),
+  playlist: [
       {
-        title: "Born Free",
-        artist: "The Rassle",
-        album: "Introducing",
-        cover: "sample/cover/1.jpg",
-        link: "sample/music/1.mp3"
+          title: "Born Free",
+          artist: "The Rassle",
+          album: "Introducing",
+          cover: "sample/cover/1.jpg",
+          link: "sample/music/1.mp3"
+      },
+      {
+          title: "Summer Vibe",
+          artist: "Walk off the Earth",
+          album: "Summer Vibe",
+          cover: "sample/cover/2.jpg",
+          link: "sample/music/2.mp3"
       }
-    ]
-  })
+  ],
+  show_list: true,
+  title_change: true
+});
