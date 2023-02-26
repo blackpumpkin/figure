@@ -1,0 +1,15 @@
+<link href="KPlayer.css" rel="stylesheet" type="text/css" />
+<script src="KPlayer.js"></script>
+
+const player = new KPlayer({
+    container: document.querySelector("#player-1"),
+    playlist: [
+      {
+        title: "Born Free",
+        artist: "The Rassle",
+        album: "Introducing",
+        cover: "sample/cover/1.jpg",
+        link: "sample/music/1.mp3"
+      }
+    ]
+  })
